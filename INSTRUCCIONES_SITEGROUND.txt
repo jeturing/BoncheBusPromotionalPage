@@ -1,0 +1,75 @@
+==================================================================
+INSTRUCCIONES PARA PUBLICAR BONCHE BUS EN SITEGROUND
+==================================================================
+
+PASO 1: INSTALAR NODE.JS (si no lo tienes)
+------------------------------------------------------------------
+1. Ve a https://nodejs.org
+2. Descarga la versión LTS (recomendada)
+3. Instala siguiendo las instrucciones
+4. Verifica en la terminal escribiendo: node --version
+
+
+PASO 2: COMPILAR EL PROYECTO
+------------------------------------------------------------------
+1. Descarga TODO el proyecto a tu computadora
+2. Abre la terminal (CMD en Windows / Terminal en Mac)
+3. Navega a la carpeta del proyecto:
+   cd ruta/a/bonche-bus
+
+4. Ejecuta estos comandos UNO POR UNO:
+   
+   npm install
+   
+   (Espera a que termine, puede tardar unos minutos)
+   
+   npm run build
+   
+   (Esto creará una carpeta llamada "dist")
+
+
+PASO 3: SUBIR A SITEGROUND
+------------------------------------------------------------------
+1. Entra a SiteGround → Site Tools
+2. Ve a File Manager
+3. Navega a "public_html" (o la carpeta de tu dominio)
+4. BORRA todo lo que haya dentro de public_html
+5. Entra a la carpeta "dist" que se creó en tu proyecto
+6. SUBE TODO el contenido de "dist" a public_html
+7. También sube el archivo ".htaccess" a public_html
+
+IMPORTANTE: No subas la carpeta "dist", solo su CONTENIDO
+
+
+PASO 4: VERIFICAR
+------------------------------------------------------------------
+1. Visita tu dominio en el navegador
+2. Prueba todas las páginas:
+   - Inicio
+   - Paquetes
+   - Quiénes Somos
+   - Contacto
+   - Reservas
+
+¡Listo! Tu sitio debería estar funcionando.
+
+
+PROBLEMAS COMUNES
+------------------------------------------------------------------
+- Si ves error 404 al cambiar de página:
+  Verifica que el archivo .htaccess esté en public_html
+
+- Si no se ven las imágenes:
+  Asegúrate de subir TODO el contenido de la carpeta dist
+
+- Si te pide permisos:
+  En File Manager, selecciona todos los archivos → 
+  Click derecho → Change Permissions → 755 para carpetas, 644 para archivos
+
+
+SOPORTE
+------------------------------------------------------------------
+WhatsApp Bonche Bus: (849) 657-6361 / (849) 650-6361
+Tel: (809) 619-6960 / (809) 616-6960
+
+==================================================================
